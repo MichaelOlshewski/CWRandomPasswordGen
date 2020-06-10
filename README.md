@@ -7,7 +7,7 @@ This homework was to help get us familiar with working in the javascript languag
 https://michaelolshewski.github.io/CWRandomPasswordGen/
 
 ### __Image of 'index.html'__
-![index.html] (/Assets/indexImage.png)
+![index.html](/Assets/indexImage.png)
 
 - [x] Hide `[object HTMLTextAreaElement]` from output
 - [x] Output password string to textarea
