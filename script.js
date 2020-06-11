@@ -2,7 +2,9 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
-  passwordText.value = "";
+
+
+  document.getElementById("password").value = "";
   // Sets the possible password values
   var complexity = prompt("Choose how long your password should be between 8 and 128 characters.");
   
@@ -50,6 +52,12 @@ function writePassword() {
   passwordText.value = password;
 }
 
+// Clears previous password from output
+function clearOutput() {
+  password = password.replace(password, '');
+}
+
 // Add event listener to generate button
+generateBtn.addEventListener("click", clearOutput);
 generateBtn.addEventListener("click", writePassword);
-console.log("V2.0.0");
+console.log("V3");
