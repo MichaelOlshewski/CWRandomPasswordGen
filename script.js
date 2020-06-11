@@ -68,4 +68,4 @@ function copyOutput() {
 generateBtn.addEventListener("click", clearOutput);
 generateBtn.addEventListener("click", writePassword);
 outPutbox.addEventListener("click", copyOutput);
-console.log("V4");
+console.log("V5");
