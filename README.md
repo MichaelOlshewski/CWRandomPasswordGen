@@ -11,4 +11,5 @@ https://michaelolshewski.github.io/CWRandomPasswordGen/
 
 - [x] Hide `[object HTMLTextAreaElement]` from output
 - [x] Output password string to textarea
-- [ ] Ensure that the number of characters being outputed meets users specifications
+- [x] Ensure that the number of characters being outputed meets users specifications
+- [x] Add a copy feature that copys the password to your clipboard when you click the output box
