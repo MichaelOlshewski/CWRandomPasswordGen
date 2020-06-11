@@ -3,10 +3,7 @@ var generateBtn = document.querySelector("#generate");
 var outPutbox = document.querySelector("#password");
 
 function generatePassword() {
-
-  // Reset the output box to empty so the strings don't concatenate together
-  document.getElementById("password").value = "";
-
+  
   // Sets the possible password values
   var complexity = prompt("Choose how long your password should be between 8 and 128 characters.");
 
