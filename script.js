@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
-  password = "";
+  passwordText.value = "";
   // Sets the possible password values
   var complexity = prompt("Choose how long your password should be between 8 and 128 characters.");
   
@@ -44,6 +44,7 @@ function generatePassword() {
 
 // Write password to the #password input 
 function writePassword() {
+  passwordText.value = "";
   var password = generatePassword();
   password = password.replace('[object HTMLTextAreaElement]', '');
   var passwordText = document.querySelector("#password");
