@@ -41,7 +41,7 @@ function generatePassword() {
     }
     return password;
   } else {
-    return password = "Check Password Length";
+    return password = "Check Password Length! Must be between 8 and 128 characters!";
   }
 };
 
