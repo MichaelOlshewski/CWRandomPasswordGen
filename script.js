@@ -41,7 +41,7 @@ function generatePassword() {
     }
     return password;
   } else {
-    console.log("Check Password Length");
+    return password = "Check Password Length";
   }
 };
 
