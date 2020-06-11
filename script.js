@@ -52,4 +52,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-console.log("V1.0.0");
+console.log("V2.0.0");
