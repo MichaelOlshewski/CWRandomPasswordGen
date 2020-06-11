@@ -44,7 +44,6 @@ function generatePassword() {
 
 // Write password to the #password input 
 function writePassword() {
-  passwordText.value = "";
   var password = generatePassword();
   password = password.replace('[object HTMLTextAreaElement]', '');
   var passwordText = document.querySelector("#password");
