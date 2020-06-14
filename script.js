@@ -4,7 +4,7 @@ var outPutbox = document.querySelector("#password");
 
 function generatePassword() {
   
-  // Sets the possible password values
+  // Sets the possible password length
   var complexity = prompt("Choose how long your password should be between 8 and 128 characters.");
 
   // Creates confirm prompts and stores the values for use later in the document
@@ -27,17 +27,21 @@ function generatePassword() {
   // If else statement determining if length of password is within the criteria
   if (complexity >= 8 && complexity <= 128 && complexity) {    
     //Multiple if statements to add characters from the object into the allowed variable for use later determining what characters to create the password from  
-    if (useUpperCase) {
-      allowed += characters.upperCase;
-    }
-    if (useLowerCase) {
-      allowed += characters.lowerCase;
-    }
-    if (useNumbers) {
-      allowed += characters.numbers;
-    }
-    if (useSymbols) {
-      allowed += characters.symbols;
+    if (useLowerCase || useLowerCase || useNumbers || useSymbols) {
+      if (useUpperCase) {
+        allowed += characters.upperCase;
+      }
+      if (useLowerCase) {
+        allowed += characters.lowerCase;
+      }
+      if (useNumbers) {
+        allowed += characters.numbers;
+      }
+      if (useSymbols) {
+        allowed += characters.symbols;
+      }
+    } else {
+      return password = "You need to choose atleast one option";
     }
     // For loop to randomly pick characters from the allowed variable
     for (var i = 0; i <= complexity - 1; i++) {
